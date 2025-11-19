@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body style */
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Our custom "component" classes, daisy-like */
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md border border-transparent 
+      px-4 py-2 text-sm font-medium shadow-sm 
+      disabled:opacity-50 disabled:cursor-not-allowed transition;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+  }
+
+  .btn-disabled {
+    @apply bg-gray-200 text-gray-500 cursor-not-allowed;
+  }
+
+  /* Cards */
+  .card {
+    @apply rounded-xl bg-white shadow-sm border border-gray-200;
+  }
+
+  .card-body {
+    @apply p-4 md:p-6 flex flex-col gap-4;
+  }
+
+  .card-actions {
+    @apply flex items-center gap-2;
+  }
+
+  .card-title {
+    @apply text-base font-semibold leading-tight;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium;
+  }
+
+  .badge-available {
+    @apply bg-green-700 text-white;
+  }
+
+  .badge-secondary {
+    @apply bg-purple-100 text-purple-700;
+  }
+
+  .badge-outline {
+    @apply border border-gray-300 text-gray-700;
+  }
+
+  /* Navbar */
+  .navbar {
+    @apply flex items-center justify-between border-b border-gray-200 bg-white py-3;
+  }
+
+  /* Tabs */
+  .tabs {
+    @apply flex items-center gap-2;
+  }
+
+  .tabs-border {
+    @apply border-b border-gray-200;
+  }
+
+  .tab {
+    @apply cursor-pointer px-3 py-2 text-sm font-medium text-gray-600 
+      border-b-2 border-transparent hover:text-gray-900 hover:border-gray-300;
+  }
+
+  .tab-active {
+    @apply text-blue-600 border-blue-500;
+  }
+
+  /* Select (user dropdown) */
+  .select {
+    @apply rounded-md border border-gray-300 bg-white text-sm px-2 py-1;
+  }
+
+  .select-bordered {
+    /* already has border via .select; you can add extra styles if you like */
+  }
+
+  .select-sm {
+    @apply text-xs py-1;
+  }
+
+  /* Menu list styling */
+  .menu {
+    @apply flex flex-col gap-1;
+  }
+
+  .menu li a {
+    @apply block px-3 py-1 text-sm rounded-md hover:bg-gray-100 cursor-pointer;
+  }
+
+  .dropdown[open] .dropdown-content {
+    @apply block;
+  }
+
+  .dropdown-content {
+    @apply hidden absolute z-20;
+  }
+
+  .dropdown-end .dropdown-content {
+    @apply right-0;
+  }
+
+  /* Hidden menu until <summary> is clicked */
+  .dropdown > summary::marker {
+    content: "";
+  }
+
+  /* Dropdown container */
+  .dropdown {
+    @apply relative inline-block;
+  }
+
+  /* ===== Form controls (daisy-like) ===== */
+  .form-control {
+    @apply flex flex-col gap-1;
+  }
+
+  .label {
+    @apply flex items-center justify-between text-sm font-medium text-gray-700;
+  }
+
+  .label-text {
+    @apply text-sm font-medium text-gray-700;
+  }
+
+  .input {
+    @apply w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm shadow-sm
+      focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+  }
+
+  .textarea {
+    @apply w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm shadow-sm
+      focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+  }
+
+  /* Fieldset (daisyUI-like) */
+  .fieldset {
+    @apply border border-gray-200 rounded-xl bg-gray-50 p-4 md:p-5 space-y-4;
+  }
+
+  .fieldset-legend {
+    @apply px-2 text-xs font-semibold uppercase tracking-wide text-gray-500;
+  }
+
+  /* Alerts (success/error messages) */
+  .alert {
+    @apply rounded-lg border px-3 py-2 text-sm;
+  }
+
+  .alert-success {
+    @apply border-green-200 bg-green-50 text-green-800;
+  }
+
+  .alert-error {
+    @apply border-red-200 bg-red-50 text-red-800;
+  }
+    /* ===== Modal (daisyUI-like) ===== */
+    .modal {
+      @apply fixed inset-0 z-40 flex items-center justify-center;
+    }
+  
+    .modal-backdrop {
+      @apply fixed inset-0 bg-black bg-opacity-30;
+    }
+  
+    .modal-box {
+      @apply relative z-50 w-full max-w-md mx-4 rounded-2xl bg-white p-6 shadow-lg;
+    }
+  
+    .modal-title {
+      @apply text-lg font-semibold mb-2;
+    }
+  
+    .modal-body-text {
+      @apply text-sm text-gray-600 mb-4;
+    }
+  
+    .modal-actions {
+      @apply flex justify-end gap-2 mt-2;
+    }
+  
+    .modal-close {
+      @apply absolute right-3 top-3 text-xl leading-none text-gray-400 hover:text-gray-600;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+  
+}
