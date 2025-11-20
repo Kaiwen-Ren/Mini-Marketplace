@@ -80,5 +80,46 @@ Open the top-right dropdown. Select Alice, Bob, or Charlie. The pages will autom
 
 # Known limitations
 
-User profile and user login page are not implemented.
+Need to design responsive layout for mobile devices.
+
+# Page Examples:
+
+## Public Listings
+
+<img width="2752" height="1588" alt="image" src="https://github.com/user-attachments/assets/0008cdb5-acc6-4a20-8b91-5ebe7c9e6120" />
+
+## Create Listing
+
+<img width="2760" height="1562" alt="image" src="https://github.com/user-attachments/assets/8d25237d-ca24-454b-b79d-74777c4d3537" />
+
+## Book an Item
+
+<img width="2748" height="1578" alt="image" src="https://github.com/user-attachments/assets/5dedef41-3db8-486a-bcad-7a8bb4b5e2b4" />
+
+After click book button:
+
+<img width="2766" height="1586" alt="image" src="https://github.com/user-attachments/assets/4f5f1176-211c-4173-a4e8-019a538790f5" />
+
+## My Selling
+
+<img width="2756" height="1580" alt="image" src="https://github.com/user-attachments/assets/faa1c6dc-b7cc-417d-8b8c-de9320d5201a" />
+
+Mark an item as sold
+
+<img width="2762" height="1582" alt="image" src="https://github.com/user-attachments/assets/e7fbbda6-f3de-4c9b-98c7-c5f3e42ea9af" />
+
+Cancel a booking
+
+<img width="2756" height="1590" alt="image" src="https://github.com/user-attachments/assets/fa5c73a8-4316-49a4-9db0-108078d047d3" />
+
+Final status
+
+<img width="2748" height="1566" alt="image" src="https://github.com/user-attachments/assets/b4a88679-d180-4bd7-9074-e230ea8b94cb" />
+
+## My Buying
+
+<img width="2752" height="1586" alt="image" src="https://github.com/user-attachments/assets/1a44555e-5424-4647-bde2-156d59856c6f" />
+
+# Demo video
+
 
