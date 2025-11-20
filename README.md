@@ -58,7 +58,7 @@ This opens the database studio. You can add some default data in it. e.g.,
 
 Inside `backend` folder:
 ```
-npm run dev
+PORT=3001 npm run dev
 ```
 The backend runs on `http://localhost:3001`
 
@@ -122,4 +122,4 @@ Final status
 
 # Demo video
 
-
+https://drive.google.com/file/d/1XyRVI-In107zwB4_3435uONmjXy8tTFE/view?usp=sharing
